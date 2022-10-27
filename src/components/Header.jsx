@@ -11,4 +11,8 @@ function Header({text}) {
   )
 }
 
+Header.defaultProps ={
+    text:'Feedback UI'
+}
+
 export default Header
