@@ -6,8 +6,8 @@ function RatingSelect({select}) {
     const [selected, setSelected] = useState(10)
 
     const handleChange = (event) =>{
-        setSelected(event.currentTarget.value)
-        select(event.currentTarget.value)
+        setSelected(+event.currentTarget.value)
+        select(+event.currentTarget.value)
     }
   return (
     <ul className='rating'>
