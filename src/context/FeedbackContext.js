@@ -42,7 +42,7 @@ export const FeedbackProvider = ({children})=>{
     }
 
     const editFeedback = (item)=>{
-        setFeedback({
+        setFeedbackEdit({
             item,
             edit: true
         })
@@ -52,7 +52,8 @@ export const FeedbackProvider = ({children})=>{
                 feedback,
                 deleteFeedback,
                 addFeedback,
-                editFeedback
+                editFeedback,
+                feedbackEdit
         }}>{/* ContextObject.provider value={}*/}
             {children}
         </FeedbackContext.Provider>
